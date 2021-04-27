@@ -17,4 +17,4 @@ python manage.py runserver
 
 # live server
 
-https://zuri-blogging.herokuapp.com/
+https://zuri-blogs.herokuapp.com/

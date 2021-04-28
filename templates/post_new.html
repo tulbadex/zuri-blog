@@ -4,14 +4,16 @@
 
 {% block content %}
 
-    <div class="post-entry">
-        <h1>New Blog post</h1>
+    <div class="post-entry card">
+        <div class="card-body">
+            <h1 class="card-title">New Blog post</h1>
 
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Save</button>
-        </form>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Save</button>
+            </form>
+        </div>
     </div>
 
 {% endblock %}

@@ -11,7 +11,7 @@ class BlogListView(ListView):
     model = Post
     template_name = 'home.html'
     ordering = ['-id']
-    paginate_by = 10
+    paginate_by = 20
 
 
 class BlogDetailView(DetailView):

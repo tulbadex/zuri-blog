@@ -26,7 +26,7 @@
     <a href="{% url 'posts:post_edit' post.pk %}">Edit Blog Post</a>&nbsp;&nbsp;&nbsp;
     <a href="{% url 'posts:post_delete' post.pk %}">Delete Blog Post</a>
     {% else %}
-    <a href="{% url 'accounts:login' %}">Login to Comment</a>
+    <a href="{% url 'login' %}">Login to Comment</a>
     {% endif %}
 
 {% endblock %}

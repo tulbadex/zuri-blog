@@ -17,6 +17,7 @@ build with (Django)[https://www.djangoproject.com/]
 * EMAIL_HOST_PASSWORD=
 * EMAIL_USE_TLS=
 
+<<<<<<< HEAD
 ## The requirement contain the list of dependency to be install
 
 ## The runtime file contain the version of python used for the project
@@ -40,3 +41,6 @@ build with (Django)[https://www.djangoproject.com/]
 ## Heroku live server link
 
 [Heroku](https://zuri-blogs.herokuapp.com/)
+=======
+https://zuri-blogs.herokuapp.com/
+>>>>>>> change directory of templates

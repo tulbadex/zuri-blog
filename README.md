@@ -9,13 +9,13 @@ build with (Django)[https://www.djangoproject.com/]
 
 ### You have ti generate your own django secrete key
 
-*SECRET_KEY=
-*DEBUG=
-*EMAIL_HOST=
-*EMAIL_PORT=
-*EMAIL_HOST_USER=
-*EMAIL_HOST_PASSWORD=
-\*EMAIL_USE_TLS=
+* SECRET_KEY=
+* DEBUG=
+* EMAIL_HOST=
+* EMAIL_PORT=
+* EMAIL_HOST_USER=
+* EMAIL_HOST_PASSWORD=
+* EMAIL_USE_TLS=
 
 ## The requirement contain the list of dependency to be install
 
@@ -27,14 +27,15 @@ build with (Django)[https://www.djangoproject.com/]
 
 - create a folder
 - run
-  *pip install pipenv
-  *pipenv install django
+  * pip install pipenv
+  * pipenv install django
+  
   #### Active pipenv virtual environment with
-  \*pipenv shell or pipenv run
+  * pipenv shell or pipenv run
 
 ## To start the project
 
-\*python manage.py runserver
+* python manage.py runserver
 
 ## Heroku live server link
 

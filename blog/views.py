@@ -51,3 +51,12 @@ class CommentCreateView(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         form.instance.post = Post.objects.get(pk=self.kwargs['post_pk'])
         return super().form_valid(form)
+
+    """ def get_success_url(self):
+        return reverse_lazy('post_detail', kwargs={self.kwargs['post_pk']})
+        # kwargs={'pk':self.kwargs['pk']}
+
+    def get_initial(self):
+        initial = super.get_initial()
+        initial['author'] = self.request.user
+        return initial """

@@ -9,6 +9,11 @@
             <div class="card-body">
                 <h2 class="card-title"><a href="{% url 'posts:post_detail' post.pk %}">{{ post.title }}</a></h2>
                 <p class="card-text">{{ post.body|slice:":200" }}...</p>
+                {% if post.comments.all.count <= 1 %}
+                <h4><span class="badge rounded-pill bg-secondary">{{ post.comments.all.count }}</span> Comment</h4>
+                {% else %}
+                <h4><span class="badge rounded-pill bg-secondary">{{ post.comments.all.count }}</span> Comment's</h4>
+                {% endif %}
                 <a href="{% url 'posts:post_detail' post.pk %}" class="btn btn-primary">Read More &rarr;</a>
             </div>
         </div>

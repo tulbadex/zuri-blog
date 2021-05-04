@@ -9,6 +9,11 @@
         <div class="post-entry card-body">
             <h2 class="card-title">{{ post.title }}</h2>
             <p class="card-text">{{ post.body }}</p>
+            {% if post.comments.all.count <= 1 %}
+            <h4><span class="badge rounded-pill bg-secondary">{{ post.comments.all.count }}</span> Comment</h4>
+            {% else %}
+            <h4><span class="badge rounded-pill bg-secondary">{{ post.comments.all.count }}</span> Comment's</h4>
+            {% endif %}
         </div>
 
         <div class="card-footer">
